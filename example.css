@@ -1,0 +1,137 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.8em;
+  padding-top: 50px;
+}
+
+.left-column, .right-column {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.ive-image {
+  width: 250px;
+}
+
+// blue #0a65ef
+// yellow #ffbb00
+// red #d64022
+// green #00a158
+
+.left-column:hover {
+  background-color: yellow;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px;
+  background: #888;
+  border-radius: 5px;
+  color: #fff;
+  border: 5px solid #ccc;
+  border-bottom: 10px solid #766D6D;
+  border-top: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: #ccc;
+}
+
+.button:active {
+  border-bottom: 3px solid #766D6D;
+  transform: translate(0px, 4px);
+}
+
+.google-button {
+  background: #0c66f0;
+  border-color: #ECCD6A;
+  border-bottom-color: #ffc200;
+  color: #fff;
+}
+
+.header-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #3f6e98;
+  height: 50px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.container {
+  width: 760px;
+  margin: 0 auto;
+}
+
+.search-area {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.search-icon {
+  position: absolute;
+  color: black;
+  top: 1px;
+  color: #888;
+  left: 7px;
+  font-size: 18px;
+}
+
+.search-input {
+  color: #000;
+  padding: 5px 5px 5px 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 15px;
+
+  width: 80px;
+  transition: width 0.2s linear;
+}
+
+.search-input:focus {
+  width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+ // Some useful attributes:
+ // background: colorname; // Background color
+ // color: colorname; // Font color
+ // padding: 10px; // or whatever amount,
+ //                // give it some padding inside so text
+ //                // doesnt touch borders
+ // border: 1px solid colorname;
+ // You can specifically change the bottom border, or any side:
+ // border-bottom: 5px solid colorname;
+ // border-left, border-right, border-top .. etc..
+ // border-radius: 5px; // rounded corners!
+ // display: inline-block; // Works well for buttons
+ //
+ // Bonus: create a "button" class with these base attributes,
+ // and alternate classes to add colors, like we saw with
+ // bootstrap "btn btn-primary" "btn-danger" etc..
+
+// unvisited
+
+

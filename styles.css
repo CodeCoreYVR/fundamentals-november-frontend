@@ -1,0 +1,17 @@
+#left-column {
+  width: 45%;
+  display: inline-block;
+}
+
+#right-column {
+  width: 45%;
+  display: inline-block;
+}
+
+.ruby-image {
+  max-width: 100%;
+}
+
+.cookie-monster {
+  max-width: 100%;
+}
