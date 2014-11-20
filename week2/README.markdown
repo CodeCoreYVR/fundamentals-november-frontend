@@ -23,6 +23,8 @@ Topics covered
   - See week 1 notes.
 - Centering block elements
   - `margin: 0 auto;`
+  - `margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right:
+    auto;`
   - This is the same as `margin-left: auto; margin-right: auto`
 - Positioning boxes on top of other boxes
   - Make both boxes `block` elements

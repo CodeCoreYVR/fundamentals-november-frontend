@@ -1,0 +1,111 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E1E1E1;
+}
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-name {
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+.my-credentials {
+  margin-top: -5px;
+  font-weight: 300;
+  color: #888;
+}
+
+.section-header {
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.contact {
+  font-family: 'Droid Serif', serif;
+  width: 250px;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  font-size: 13px;
+}
+
+.icon {
+  font-size: 18px;
+  display: inline-block;
+  width: 16px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-left: 0;
+}
+
+.left-column {
+  width: 400px;
+  padding-right: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right-column {
+  width: 225px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media all and (max-width: 700px) {
+  .contact {
+    margin-top: -10px;
+    position: static;
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0px 15px;
+  }
+
+  .left-column {
+    width: 100%;
+    display: block;
+    padding-right: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .right-column {
+    width: 100%;
+    display: block;
+  }
+}
