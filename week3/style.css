@@ -101,7 +101,6 @@ li {
     display: block;
   }
 }
-
 @media all and (max-width: 700px) {
   .my-name {
     font-size: 40px;

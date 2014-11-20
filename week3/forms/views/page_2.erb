@@ -1,0 +1,7 @@
+<h1>Page 2!</h1>
+<h2>Total so far: <%= total %></h2>
+
+<form action="/page-3" method="post">
+  <input type="hidden" name="total_so_far" value="<%= total %>" />
+  <input type="submit" value="Go to page 3" />
+</form>

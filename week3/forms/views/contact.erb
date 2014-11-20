@@ -1,0 +1,54 @@
+<div style="width: 450px; margin: 0 auto; padding-bottom: 30px;">
+  <h1>Contact us</h1>
+  <form action="http://localhost:4567/contact" method="post" role="form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" type="text" id="name" placeholder="e.g. John Smith" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="e.g. john@smith.com" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="secret-message">Secret message</label>
+      <input type="password" class="form-control" id="secret-message" placeholder="" name="secret-message">
+    </div>
+
+    <div class="form-group">
+    <label for="newsletter">
+      Want newsletter?
+    </label>
+    <br/>
+      <input type="checkbox" id="newsletter" name="newsletter">
+      Yes
+    </div>
+
+    <label for="department">Department</label>
+    <div class="form-group">
+      <label class="radio-inline">
+        <input type="radio"  name="department" value="marketing">
+        Marketing
+      </label>
+
+      <label class="radio-inline">
+        <input type="radio"  name="department" value="sales">
+        Sales
+      </label>
+
+      <label class="radio-inline">
+        <input type="radio"  name="department" value="technical">
+        Technical
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea name="message" class="form-control" id="message"></textarea>
+    </div>
+
+    <input type="submit" class="btn btn-primary" name="contact-type" value="Contact Us">
+    <input type="submit" class="btn btn-default" name="contact-type" value="Please remove me from your newsletter">
+  </form>
+</div>
