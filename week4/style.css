@@ -157,8 +157,6 @@ body {
 .image-grid-item {
   height: 250px;
   position: relative;
-  margin-right: 15px;
-  width: 235px;
   transition: opacity 0.3s linear;
   opacity: 0.65;
   cursor: pointer;
@@ -170,11 +168,11 @@ body {
 }
 
 .image-grid-item-large {
-  width: 470px;
 }
 
 .image-grid-item-small {
-  width: 172px;
+  height: 400px;
+  opacity: 0;
 }
 
 .image-grid-item:hover {
@@ -191,11 +189,17 @@ body {
 }
 
 .whistler-image {
+  width: 100%;
+  height: 100%;
   background: url(http://www.pearllimousine.ca/resources/skiing-at-whistler-resort.jpg?timestamp=1322851728529) top left no-repeat;
 }
 
 #carousel-example-generic {
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   margin-top: 60px;
+}
+
+#carousel-example-generic img {
+  width: 100%;
 }

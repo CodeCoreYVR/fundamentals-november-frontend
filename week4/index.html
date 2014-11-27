@@ -8,6 +8,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <link href="animate.css" rel="stylesheet">
+    <link href="stagger.css" rel="stylesheet">
   </head>
 
   <body>
@@ -77,14 +78,20 @@
 
 
         <div class="row image-grid">
-          <div class="whistler-image image-grid-item col-xs-4">
-            <h3 class="image-grid-text">Whistler</h3>
+          <div class="image-grid-item col-xs-4">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="whistler-image image-grid-item col-xs-4">
-            <h3 class="image-grid-text">Whistler</h3>
+          <div class="image-grid-item col-xs-4">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="whistler-image image-grid-item col-xs-4">
-            <h3 class="image-grid-text">Whistler</h3>
+          <div class="image-grid-item col-xs-4">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
       </div>
     </div>
@@ -100,11 +107,15 @@
 
 
         <div class="row image-grid">
-          <div class="whistler-image image-grid-item image-grid-item-large col-xs-8">
-            <h3 class="image-grid-text">Whistler</h3>
+          <div class="image-grid-item image-grid-item-large col-xs-8">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="whistler-image image-grid-item col-xs-4">
-            <h3 class="image-grid-text">Whistler</h3>
+          <div class="image-grid-item col-xs-4">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
       </div>
     </div>
@@ -116,13 +127,25 @@
         </h3>
 
         <div class="row image-grid">
-          <div class="_4 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          <div class="_2 image-grid-item image-grid-item-small col-xs-3">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="_1 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          <div class="_1 image-grid-item image-grid-item-small col-xs-3">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="_9 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          <div class="_3 image-grid-item image-grid-item-small col-xs-3">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
-          <div class="_14 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          <div class="_4 image-grid-item image-grid-item-small col-xs-3">
+            <div class="whistler-image">
+              <h3 class="image-grid-text">Whistler</h3>
+            </div>
           </div>
       </div>
     </div>
@@ -161,7 +184,7 @@
     $(function() {
       $('.places-to-visit .image-grid-item').last().waypoint(function() {
         $('.image-grid-item-small').addClass('animated fadeInUp');
-      });
+      }, {offset: '90%'});
     });
   </script>
 </html>
