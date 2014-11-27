@@ -3,9 +3,11 @@
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="vide.js"></script>
+    <script src="waypoints.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
   </head>
 
   <body>
@@ -14,10 +16,10 @@
          data-vide-options="loop: true, muted: true, position: 0% 0%">
 
     <div class="fluid-container">
-      <div class="hero-branding col-xs-2">
+      <div class="hero-branding col-xs-6">
 
       </div>
-      <div class="hero-navigation col-xs-4 col-xs-push-6">
+      <div class="hero-navigation col-xs-6">
         <ul class="navigation-items">
           <li>
           <img class="hero-navigation-profile-image" src="https://a0.muscache.com/ic/users/524883/profile_pic/1408032806/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=50:*&output-format=jpg&output-quality=70">
@@ -50,7 +52,7 @@
     </div>
 
      <div class="container">
-       <div class="col-xs-12 welcome-panel">
+       <div class="welcome-panel">
           <h1 class="welcome-text">WELCOME HOME</h1>
           <p class="welcome-subtitle">
             Rent unique places to stay from local hosts in 190+ countries.
@@ -66,15 +68,100 @@
 
     <div class="places-to-visit">
       <div class="container">
-        <h3 class="places-to-visit-title">
+        <h3 class="subsection-title">
           Just for the Weekend
         </h3>
-        <h4 class="places-to-visit-subtitle">
+        <h4 class="subsection-subtitle">
           Discover new, inspiring places close to home.
         </h4>
 
 
+        <div class="row image-grid">
+          <div class="whistler-image image-grid-item col-xs-4">
+            <h3 class="image-grid-text">Whistler</h3>
+          </div>
+          <div class="whistler-image image-grid-item col-xs-4">
+            <h3 class="image-grid-text">Whistler</h3>
+          </div>
+          <div class="whistler-image image-grid-item col-xs-4">
+            <h3 class="image-grid-text">Whistler</h3>
+          </div>
       </div>
     </div>
+
+    <div class="explore-the-world">
+      <div class="container">
+        <h3 class="subsection-title">
+          Just for the Weekend
+        </h3>
+        <h4 class="subsection-subtitle">
+          Discover new, inspiring places close to home.
+        </h4>
+
+
+        <div class="row image-grid">
+          <div class="whistler-image image-grid-item image-grid-item-large col-xs-8">
+            <h3 class="image-grid-text">Whistler</h3>
+          </div>
+          <div class="whistler-image image-grid-item col-xs-4">
+            <h3 class="image-grid-text">Whistler</h3>
+          </div>
+      </div>
+    </div>
+
+    <div class="our-community">
+      <div class="container">
+        <h3 class="subsection-title">
+          Our Community
+        </h3>
+
+        <div class="row image-grid">
+          <div class="_4 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          </div>
+          <div class="_1 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          </div>
+          <div class="_9 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          </div>
+          <div class="_14 whistler-image image-grid-item image-grid-item-small col-xs-3">
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://www.pearllimousine.ca/resources/skiing-at-whistler-resort.jpg?timestamp=1322851728529" alt="...">
+        </div>
+        <div class="item">
+          <img src="http://www.pearllimousine.ca/resources/skiing-at-whistler-resort.jpg?timestamp=1322851728529" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        ...
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </body>
+
+  <script>
+    $(function() {
+      $('.places-to-visit .image-grid-item').last().waypoint(function() {
+        $('.image-grid-item-small').addClass('animated fadeInUp');
+      });
+    });
+  </script>
 </html>

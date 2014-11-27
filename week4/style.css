@@ -33,6 +33,7 @@ format("svg");
 
 body {
   font-family: Circular;
+  padding-bottom: 30px;
 }
 
 #hero {
@@ -42,8 +43,12 @@ body {
 }
 
 .welcome-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
   text-align: center;
-  padding-top: 100px;
+  min-width: 320px;
 }
 
 .welcome-text {
@@ -122,10 +127,75 @@ body {
   width: 100vw;
 }
 
-.places-to-visit-title {
+.subsection-title {
   text-align: center;
+  color: #606465;
+  margin-top: 30px;
+  margin-bottom: 2px;
 }
 
-.places-to-visit-subtitle {
+.subsection-subtitle {
   text-align: center;
+  color: #606465;
+  margin-top: 2px;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.explore-the-world .subsection-title {
+  margin-top: 50px;
+}
+
+.our-community {
+
+}
+
+.image-grid {
+
+}
+
+.image-grid-item {
+  height: 250px;
+  position: relative;
+  margin-right: 15px;
+  width: 235px;
+  transition: opacity 0.3s linear;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.our-community .subsection-title {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.image-grid-item-large {
+  width: 470px;
+}
+
+.image-grid-item-small {
+  width: 172px;
+}
+
+.image-grid-item:hover {
+  opacity: 1;
+}
+
+.image-grid-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.whistler-image {
+  background: url(http://www.pearllimousine.ca/resources/skiing-at-whistler-resort.jpg?timestamp=1322851728529) top left no-repeat;
+}
+
+#carousel-example-generic {
+  height: 300px;
+  overflow: hidden;
+  margin-top: 60px;
 }
