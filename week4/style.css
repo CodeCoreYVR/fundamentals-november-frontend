@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Circular;
+  font-style: italic;
+  font-weight: normal;
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Book_Italic-b522304ad9e39a1664a10e12af755fa5.eot");
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Book_Italic-b522304ad9e39a1664a10e12af755fa5.eot?#")
+format("eot"),url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Book_Italic-0049c4199f0ac1cdcada3a1219c8560b.woff")
+format("woff"),url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Book_Italic-85d100a70728fe06ace0cf7e1a8ecd2c.svg")
+format("svg");
+}
+
+@font-face {
+  font-family: Circular;
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Bold-91d5db7c216e087264800c403a223789.eot");
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Bold-91d5db7c216e087264800c403a223789.eot?#")
+format("eot"),url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Bold-bdeae772fc14b223aaf65905ba09fb2e.woff")
+format("woff"),url("https://a0.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Bold-5622d136ffe95ee7fc5fdb694ded90b8.svg")
+format("svg");
+}
+
+@font-face {
+  font-family: Circular;
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Black-5e3368e29c1f4cd834f0226cd6998f3e.eot");
+  src: url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Black-5e3368e29c1f4cd834f0226cd6998f3e.eot?#")
+format("eot"),url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Black-4004c68a84ea1913a9b5c5ef56d4b3e9.woff")
+format("woff"),url("https://a1.muscache.com/airbnb/static/o2.1/build/fonts/Circular_Air-Black-5674eaad3723ea71602322d4533a7a86.svg")
+format("svg");
+}
+
+body {
+  font-family: Circular;
+}
+
+#hero {
+  width: 100%;
+  height: 500px;
+  color: #fff;
+}
+
+.welcome-panel {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.welcome-text {
+  margin-bottom: 2px;
+}
+
+.welcome-subtitle {
+  margin-bottom: 22px;
+}
+
+.btn.how-it-works-button {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 0;
+}
+
+.btn.how-it-works-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-branding {
+  height: 51px;
+  background: url(airbnb.png) 20px 20px no-repeat;
+}
+
+.hero-navigation {
+  height: 70px;
+  text-align: right;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navigation-items > li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  line-height: 70px;
+  vertical-align: middle;
+}
+
+.hero-navigation-profile-image {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  width: 28px;
+}
+
+.hero-dropdown-menu-button {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 100;
+}
+
+
+.hero-dropdown-menu-button:hover, .hero-dropdown-menu-button:active, .hero-dropdown-menu-button:visited {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.hero-dropdown-menu-button .caret {
+  color: #ccc;
+  margin-left: 5px;
+}
+
+.hero-search-bar {
+  background: rgba(0,0,0,0.6);
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.places-to-visit-title {
+  text-align: center;
+}
+
+.places-to-visit-subtitle {
+  text-align: center;
+}

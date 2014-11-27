@@ -1,0 +1,5 @@
+- Bootstrap - continued
+- Fun: Parallax - http://pixelcog.com/parallax.js/
+- Fun: Video background
+- What other fun effects do you want to learn?
+- Instagram copy
